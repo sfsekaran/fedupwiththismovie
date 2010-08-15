@@ -28,3 +28,7 @@ config.action_view.cache_template_loading            = true
 # config.threadsafe!
 
 APP_URL = "http://milehighmeet.com"
+
+config.after_initialize do
+  EnginesHelper.autoload_assets = false
+end
