@@ -1,0 +1,14 @@
+development:
+  bucket_name: your_bucket_name
+  access_key_id: your_access_key_id
+  secret_access_key: your_secret_access_key 
+
+test:
+  bucket_name: 
+  access_key_id: 
+  secret_access_key:
+
+production:
+  bucket_name: milehighmeet-prod
+  access_key_id: AKIAITWEH37ILBPNEQAA
+  secret_access_key: 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
