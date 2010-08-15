@@ -53,5 +53,14 @@ config.plugin_paths += ["#{RAILS_ROOT}/vendor/plugins/community_engine/plugins"]
   # The default locale is :en and all translations from config/locales/*.rb,yml are auto loaded.
   # config.i18n.load_path += Dir[Rails.root.join('my', 'locales', '*.{rb,yml}')]
   # config.i18n.default_locale = :de
+  ActionMailer::Base.delivery_method = :smtp
+  ActionMailer::Base.smtp_settings = {
+    :address => "mail.realedgedata.com",
+    :port => 25,
+    :domain => "realedgedata.com",
+    :authentication => :plain,
+    :user_name => "sathya@realedgedata.com",
+    :password => "Sathy@81"
+  }
 end
  require "#{RAILS_ROOT}/vendor/plugins/community_engine/config/boot.rb"
