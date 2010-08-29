@@ -27,7 +27,7 @@ config.action_view.cache_template_loading            = true
 # Enable threaded mode
 # config.threadsafe!
 
-APP_URL = "http://fedupwiththismovie.com"
+APP_URL = "http://fedupwiththismovie.heroku.com"
 
 config.after_initialize do
   EnginesHelper.autoload_assets = false
