@@ -9,6 +9,6 @@ test:
   secret_access_key:
 
 production:
-  bucket_name: milehighmeet-prod
+  bucket_name: fedupwiththismovie-prod
   access_key_id: AKIAITWEH37ILBPNEQAA
   secret_access_key: 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
