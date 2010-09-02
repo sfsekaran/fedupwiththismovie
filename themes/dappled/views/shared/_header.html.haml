@@ -17,6 +17,7 @@
         = topnav_tab c.name, {:url => category_path(c), :section => c.name}
       = topnav_tab "Discussions", { :url => forums_path, :section => 'forums' }
       = topnav_tab "Profiles", { :url => users_path, :section => 'users' }
+      = topnav_tab "Events", { :url => events_path, :section => 'events' }
       - if current_user 
         = topnav_tab "My Profile", { :url => user_path(current_user), :section => 'my_profile'}   
       
