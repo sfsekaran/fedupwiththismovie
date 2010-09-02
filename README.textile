@@ -1,11 +1,11 @@
-== Welcome to Fed Up With This Movie
+h1. Welcome to Fed Up With This Movie
 
 The site for people who love awesomely bad movies.
 
-== Getting Started
+h1. Getting Started
 
 It's your typical rails app with Community Engine baked in.
 
-== Check Us Out
+h1. Check Us Out
 
 http://fedupwiththismovie.com
