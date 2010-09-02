@@ -9,7 +9,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20100812072525) do
+ActiveRecord::Schema.define(:version => 20100902164002) do
 
   create_table "activities", :force => true do |t|
     t.integer  "user_id",    :limit => 10
@@ -193,6 +193,15 @@ ActiveRecord::Schema.define(:version => 20100812072525) do
     t.datetime "created_at"
   end
 
+  create_table "message_threads", :force => true do |t|
+    t.integer  "sender_id"
+    t.integer  "recipient_id"
+    t.integer  "message_id"
+    t.integer  "parent_message_id"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
   create_table "messages", :force => true do |t|
     t.integer  "sender_id"
     t.integer  "recipient_id"
@@ -203,6 +212,7 @@ ActiveRecord::Schema.define(:version => 20100812072525) do
     t.datetime "read_at"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.integer  "parent_id"
   end
 
   create_table "metro_areas", :force => true do |t|
